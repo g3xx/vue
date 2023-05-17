@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Norican&family=Parisienne&family=Raleway&family=Sofia&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --cover-height: 100vh;
+  --f-title: 40px;
+  --f-subtitle: 20px;
+
+  --fm-nicode: 'Niconne', cursive;
+  --fm-norican: 'Norican', cursive;
+  --fm-parisn: 'Parisienne', cursive;
+  --fm-raleway: 'Raleway', sans-serif;
+  --fm-sofia: 'Sofia', cursive;
+}
+
+*, ::before, ::after {
+  margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  flex-flow: column nowrap;
+  place-content: stretch flex-start;
+  align-items: stretch;
+}
+
+.center{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background: #333333ab;
+}
+
+section{
+  padding: 0px 5em;
+  font-size: 40px;
+  text-align: center;
+  line-height: 100px;
+  margin: auto;
+  width: 100%;
+}
+
+section div {
+  display: block;
+  width: 100%;
+}
+
+
+@keyframes type2 {
+  0% { width: 0;}
+  1% { opacity: 1;}
+  99.9% { border-right: .15em solid orange;}
+  100% { opacity: 1; border: none;}
+}
+
+
+@media screen and (max-width: 900px) {
+  body {
+    width: 100%;
+    font-size: 16px;
+  }
+  .wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
