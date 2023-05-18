@@ -22,14 +22,16 @@
     props: {
       image: { type: String, default: "https://source.unsplash.com/2UuZFFefnRc" }
     },
+
     methods: {
       hideIntro() {
         const el = document.querySelector('.intro');
         el.setAttribute("data-aos", "fade-up");
         setTimeout(() => { document.querySelector(".intro").remove() }, 1000)
-        console.log("work")
-        const ex = document.querySelector('.surah');
-        ex.setAttribute("start", true);
+        this.$parent.start = true
+        console.log(this.$parent.start)
+        //const ex = document.querySelector('.surah');
+        //ex.setAttribute("start", true);
       }
     },
 

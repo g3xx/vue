@@ -1,6 +1,6 @@
 <script setup >
-import ZenIntro from './components/ZenIntro.vue'
-import zenSurah from './components/ZenSurah.vue'
+
+import Boot from './components/Boot.vue'
 
 import { onMounted } from "vue";
 import AOS from "aos";
@@ -19,10 +19,7 @@ onMounted(() => {
 </script>
 
 <template>
-
-    <ZenIntro/>
-    <zenSurah/>
-
+    <Boot/>
 </template>
 
 
