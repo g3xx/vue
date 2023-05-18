@@ -8,10 +8,11 @@ import AOS from "aos";
 onMounted(() => {
     AOS.init({
       offset: 200,
-      duration: 1000,
+      duration: 800,
       easing: 'ease-in-sine',
-      delay: 150,
+      delay: 100,
       once: false,
+      useClassNames: true,
     });
 })
 

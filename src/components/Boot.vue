@@ -2,10 +2,11 @@
 
 import ZenIntro from './ZenIntro.vue'
 import ZenSurah from './ZenSurah.vue'
+import ZenProfile from './ZenProfile.vue'
 
 export default {
 
-    components: { ZenIntro, ZenSurah },
+    components: { ZenIntro, ZenSurah, ZenProfile },
     data() {
         return {
             start : false
@@ -20,6 +21,7 @@ export default {
 
     <ZenIntro/>
     <zenSurah/>
+    <ZenProfile/>
 
 </template>
 
